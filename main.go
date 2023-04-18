@@ -1,7 +1,10 @@
 package main
 
-import "log"
+import (
+	"github.com/Arvin619/websocket-learn/chatroom"
+)
 
 func main() {
-	log.Println("Hello World")
+	c := chatroom.New(8080)
+	c.Run()
 }
